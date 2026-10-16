@@ -9,14 +9,11 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "langchain>=1.4.6",
-    "langchain-classic>=1.0.8",
-    "langchain-community>=0.4.2",
     "langchain-core>=1.6.11",
     "langchain-google-genai>=4.4.2",
-    "langchainhub>=0.1.21",
+    "langchain-tavily>=0.2.18",
     "python-dotenv>=1.2.4",
     "streamlit>=1.66.0",
-    "tavily-python>=0.8.5",
 ]
 
 [project.scripts]
