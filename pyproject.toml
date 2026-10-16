@@ -1,0 +1,26 @@
+[project]
+name = "single-ai-agent-sys"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "johnclamy", email = "johnclamy@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.6",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.11",
+    "langchain-google-genai>=4.4.2",
+    "langchainhub>=0.1.21",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.0",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+single-ai-agent-sys = "single_ai_agent_sys:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
