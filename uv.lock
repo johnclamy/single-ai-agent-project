@@ -2303,6 +2303,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "langchain" },
+    { name = "langchain-classic" },
     { name = "langchain-community" },
     { name = "langchain-core" },
     { name = "langchain-google-genai" },
@@ -2315,6 +2316,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "langchain", specifier = ">=1.4.6" },
+    { name = "langchain-classic", specifier = ">=1.0.8" },
     { name = "langchain-community", specifier = ">=0.4.2" },
     { name = "langchain-core", specifier = ">=1.6.11" },
     { name = "langchain-google-genai", specifier = ">=4.4.2" },
