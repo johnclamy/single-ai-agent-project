@@ -13,7 +13,7 @@ def load_environment():
 def initialize_agent():
     """Initialize the LLM, tools, and agent."""
     llm = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
+        model="gemini-2.5-flash",
         temperature=0,
     )
     tools = [TavilySearch(max_results=2)]
