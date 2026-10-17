@@ -9,7 +9,7 @@ A lightweight, modern LangChain-based agent project designed for experimentation
 - 💻 **Dual Interface**: 
   - Interactive web UI via **Streamlit** (`app.py`).
   - Clean terminal-based CLI for quick testing (`main.py`).
-- 📓 **Research Notebook**: Includes a Jupyter notebook (`research/agent_demo.ipynb`) for iterative testing, debugging, and development notes.
+- 📓 **Research Notebook**: Includes a Jupyter notebook (`src/single_ai_agent_sys/single_ai_agent.ipynb`) for iterative testing, debugging, and development notes.
 - ⚡ **Modern Python Workflow**: Built from the ground up with **`uv`** for blazing-fast dependency resolution, virtual environment management, and reproducible builds.
 
 ## 🛠️ Tech Stack
