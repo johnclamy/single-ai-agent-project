@@ -1,7 +1,8 @@
-# Secondary CLI entrypoint for testing (Root entrypoint)import os
+# Secondary CLI entrypoint for testing (Root entrypoint)
+import os
 from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import create_agent
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_tavily import TavilySearch
 
 
@@ -29,20 +30,18 @@ def initialize_agent():
 
 def main():
     load_environment()
-    agent_executor = initialize_agent()
-    
+    agent = initialize_agent()
+
     print("--- LangChain Agent CLI ---")
     print("Type 'exit' or 'quit' to stop.\n")
 
     while True:
         user_input = input("You: ")
-        if user_input.lower() in ['exit', 'quit']:
+        if user_input.lower() in ["exit", "quit"]:
             print("Goodbye!")
             break
-            
-        response = agent_executor.invoke(
-            {"messages": [{"role": "user", "content": user_input}]}
-        )
+
+        response = agent.invoke({"messages": [{"role": "user", "content": user_input}]})
         print(f"\nAgent: {response['messages'][-1].content}\n")
 
 
