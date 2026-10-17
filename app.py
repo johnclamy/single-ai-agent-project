@@ -48,6 +48,7 @@ def get_agent():
 
 
 # Chat input logic
+
 if prompt := st.chat_input("What would you like to research today?"):
     # Add user message to state and display
     st.session_state.messages.append({"role": "user", "content": prompt})
